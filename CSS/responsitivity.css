@@ -1,0 +1,94 @@
+@media screen and (max-width:768px) {
+    .nav{
+        flex-flow: column nowrap;
+        align-content: space-between;
+        height: 200px;
+        row-gap: 10px;
+    }
+
+    .links{
+        flex-flow: column nowrap;
+        background-color: black;
+
+
+        
+    }
+
+    .links li{
+        border-color: white;
+        border-width: 2px;
+        border-bottom-style:solid ;
+    }
+
+
+    /* about end */
+
+ .about-info{
+     flex-flow: column nowrap;
+     align-content: space-between;
+ }   
+
+ .verification{
+     width:100%;
+ }
+
+ .how-to-reach{
+     width: 100%;
+     order: 1;
+     margin-bottom:20px;
+     border-style: none;
+ }
+
+
+ .statistics{
+     flex-flow: row wrap;
+ }
+
+ .stat{
+     width: 50%;
+     border-style: none;
+ }
+
+ .item{
+     width: 90%;
+
+    }
+
+.education{
+    width: 80%;
+}
+
+.experience{
+    width: 80%;
+}
+
+.edu-exp{
+    flex-flow: row wrap;
+}
+
+.prgrss{
+    width: 100%;
+}
+
+.category{
+    flex-flow: row wrap;
+}
+
+.result{
+    width: 80%;
+}
+
+
+.cli-info{
+    width: 80%;
+}
+
+.note{
+    width: 80%;
+}
+
+.address{
+    width: 80%;
+}
+    
+}

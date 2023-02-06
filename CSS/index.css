@@ -1,0 +1,772 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.center {
+    text-align: center;
+}
+
+p {
+    color: gray;
+}
+
+/* fixed styling end */
+
+.gear {
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    right: 0;
+    top: 30%;
+    background-color: red;
+    z-index: 4;
+    text-align: center;
+    padding-top: 7.5px;
+}
+
+.gear-icon {
+    font-size: 15px;
+
+}
+
+.head {
+    height: 100%;
+    width: 100%;
+    background-color: red;
+    position: relative;
+}
+
+.layer1 {
+    width: 100%;
+    height: 100%;
+
+}
+
+.layer1 img {
+    width: 100%;
+    position: fixed;
+}
+
+/* layer1 end */
+
+.layer2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(00, 00, 00, .6);
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    height: 70px;
+}
+
+.logo-img {
+    align-self: center;
+}
+
+
+.links {
+    list-style: none;
+    display: flex;
+    width: 70%;
+    justify-content: center;
+    column-gap: 20px;
+    align-self: center;
+}
+
+.links a {
+    display: flex;
+    text-decoration: none;
+    color: white;
+    transition: color 1s;
+}
+
+.links a:hover {
+    color: #20c997;
+}
+
+
+.layer2-head {
+    height: 100%;
+    padding-top: 20%;
+    color: white;
+
+}
+
+.layer2-head h1,
+h2,
+h4 {
+    margin-bottom: 20px;
+}
+
+.layer2-head h1 {
+    animation-name: border-show;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.layer2-head h1::after {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 40px;
+    background-color: white;
+
+
+}
+
+
+
+.hire-button {
+    width: 150px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: transparent;
+    border-color: #20c997;
+    color: #20c997;
+    transition: color 1s, background-color 1s;
+}
+
+.hire-button:hover {
+    color: white;
+    background-color: #20c997;
+}
+
+.arrow {
+    width: 10px;
+    height: 10px;
+    border-color: white;
+    border-width: 2px;
+    border-style: none solid solid none;
+    transform: rotate(45deg);
+    margin-top: 30px;
+    position: relative;
+    left: 49%;
+    animation-name: arrow-move;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+
+}
+
+/* head end */
+
+
+#about {
+    position: relative;
+    background-color: white;
+    padding: 50px;
+}
+
+.about-info {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+.verification {
+    width: 60%;
+}
+
+.how-to-reach {
+    width: 20%;
+    border-color: #20c997;
+    border-width: 5px;
+    border-right-style: solid;
+    border-top-style: solid;
+    border-radius: 2.5px;
+}
+
+.reaching li {
+    margin-bottom: 10px;
+    border-color: #ccc;
+    border-bottom-style: solid;
+    border-width: 1px;
+}
+
+.reaching {
+    list-style: none;
+
+
+}
+
+#about h2 {
+    position: relative;
+}
+
+#about h2,
+h3,
+p {
+    margin-bottom: 50px;
+}
+
+#about h2::after {
+    content: "";
+    position: absolute;
+    width: 5%;
+    height: 5px;
+    background-color: #20c997;
+    top: 100%;
+    left: 47.5%;
+    margin-top: 10px;
+}
+
+.statistics {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    margin-top: 50px;
+}
+
+.stat {
+    width: 20%;
+    border-bottom-style: solid;
+    border-top-style: solid;
+    border-width: 5px;
+}
+
+/* about end */
+
+#ido {
+    background-color: white;
+    width: 100%;
+    position: relative;
+    padding: 50px;
+}
+
+#ido h2 {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+#ido h2::after {
+    content: "";
+    position: absolute;
+    width: 5%;
+    height: 5px;
+    background-color: #20c997;
+    top: 100%;
+    left: 47.5%;
+    margin-top: 10px;
+
+}
+
+
+
+#ido h2,
+p {
+    margin-bottom: 50px;
+}
+
+.ido-info {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+
+}
+
+.item {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.item-icon i {
+
+    font-size: 30px;
+    color: #20c997;
+
+}
+
+
+/* end */
+
+#resume {
+    position: relative;
+    background-color: white;
+    padding: 50px;
+
+}
+
+#resume h2 {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+#resume h2::after {
+    content: "";
+    position: absolute;
+    width: 5%;
+    height: 5px;
+    background-color: #20c997;
+    top: 100%;
+    left: 47.5%;
+    margin-top: 10px;
+
+}
+
+.edu-info {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+
+}
+
+.edu-item {
+    width: 80%;
+    border-color: gray;
+    border-style: solid;
+    border-width: 2px;
+    padding: 50px;
+    margin-top: 10px;
+
+}
+
+
+.exp-info {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+
+}
+
+.exp-item {
+    width: 80%;
+    border-color: gray;
+    border-style: solid;
+    border-width: 2px;
+    padding: 50px;
+    margin-top: 10px;
+
+}
+
+
+.education {
+    width: 45%;
+}
+
+.experience {
+    width: 45%;
+}
+
+.edu-exp {
+    display: flex;
+    justify-content: space-around;
+}
+
+.p-date {
+    height: 30px;
+    color: white;
+    background-color: #20c997;
+}
+
+
+/* end */
+
+.prog {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    background-color: white;
+}
+
+.prgrss {
+    position: relative;
+    width: 40%;
+    height: 10px;
+    border-width: 2px;
+    background-color: #ccc;
+}
+
+.percent {
+    position: absolute;
+    height: 8px;
+    top: 0;
+    left: 0;
+    background-color: #20c997;
+}
+
+
+.skills {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    row-gap: 50px;
+}
+
+
+
+.percent1 {
+    width: 65%;
+    position: relative;
+}
+
+.percent1::before {
+    content: "Web Design";
+    position: absolute;
+    top: -400%;
+    left: 0;
+}
+
+.percent1::after {
+    content: "65%";
+    position: absolute;
+    top: -400%;
+    right: 0;
+}
+
+.percent2 {
+    width: 70%;
+    position: relative;
+}
+
+.percent2::before {
+    content: "React Js";
+    position: absolute;
+    top: -400%;
+    left: 0;
+}
+
+.percent2::after {
+    content: "70%";
+    position: absolute;
+    top: -400%;
+    right: 0;
+}
+
+
+.percent3 {
+    width: 95%;
+    position: relative;
+}
+
+.percent3::before {
+    content: "HTML/CSS";
+    position: absolute;
+    top: -400%;
+    left: 0;
+}
+
+.percent3::after {
+    content: "95%";
+    position: absolute;
+    top: -400%;
+    right: 0;
+}
+
+.percent4 {
+    width: 60%;
+    position: relative;
+}
+
+.percent4::before {
+    content: "Angular Js";
+    position: absolute;
+    top: -400%;
+    left: 0;
+}
+
+.percent4::after {
+    content: "60%";
+    position: absolute;
+    top: -400%;
+    right: 0;
+}
+
+
+.percent5 {
+    width: 80%;
+    position: relative;
+}
+
+.percent5::before {
+    content: "Java Script";
+    position: absolute;
+    top: -400%;
+    left: 0;
+}
+
+.percent5::after {
+    content: "80%";
+    position: absolute;
+    top: -400%;
+    right: 0;
+}
+
+.percent6 {
+    width: 99%;
+    position: relative;
+}
+
+.percent6::before {
+    content: "Bootstrap";
+    position: absolute;
+    top: -400%;
+    left: 0;
+}
+
+.percent6::after {
+    content: "99%";
+    position: absolute;
+    top: -400%;
+    right: 0;
+}
+
+.cv{
+    border-style: none;
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+    border-color: #20c997;
+    border-style: solid;
+    color: #20c997;
+    background-color: transparent;
+    margin-top: 50px;
+    transition: background-color 1s,color 1s;
+}
+
+.cv:hover{
+  background-color: #20c997;
+  color: white;
+}
+
+
+#portfolio{
+    position: relative;
+    background-color: white;
+    padding: 50px;
+}
+
+#portfolio h2{
+    position: relative;
+    margin-bottom: 50px;
+}
+
+#portfolio h2::after{
+    content: "";
+    position: absolute;
+    width: 5%;
+    height: 5px;
+    background-color: #20c997;
+    top: 100%;
+    left: 47.5%;
+    margin-top: 10px;
+}
+
+.result{
+    width: 30%;
+}
+
+.result-item img{
+    width: 100%;
+}
+
+.result-item{
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.category{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+}
+
+.shadow{
+    opacity: 0;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 1s;
+}
+
+.result-item:hover .shadow{
+opacity: .6;
+}
+
+/* category end */
+
+#client{
+    position: relative;
+    background-color: white;
+    padding: 50px;
+}
+
+#client h2{
+    position: relative;
+    margin-bottom: 50px;
+}
+
+#client h2::after{
+    content: "";
+    position: absolute;
+    width: 5%;
+    height: 5px;
+    background-color: #20c997;
+    top: 100%;
+    left: 47.5%;
+    margin-top: 10px;   
+}
+
+.cli-info{
+    position: relative;
+    width: 40%;
+    height: 400px;
+}
+
+.cli-info img ,h6,.unique,.lorem,.stars{
+position: absolute;
+}
+
+.cli-info img{
+top: 10px;
+left:10px;
+}
+
+.cli-info h6{
+ top: 15px;
+ left: 100px;
+}
+
+.cli-info .unique{
+    top: 30px;
+    left: 100px;
+    color: #20c997;
+}
+
+.cli{
+    display: flex;
+    flex-flow:row wrap ;
+    justify-content: space-evenly;
+}
+
+.lorem{
+    top: 100px;
+}
+
+.stars{
+top: 250px;
+}
+
+.stars i{
+    color: gold;
+}
+
+
+/* client end */
+
+#contact{
+    position: relative;
+    padding: 50px;
+    background-color: white;
+}
+
+#contact h2{
+    position: relative;
+    margin-bottom: 50px;
+}
+
+#contact h2::after{
+    content: "";
+    position: absolute;
+    width: 5%;
+    height: 5px;
+    background-color: #20c997;
+    top: 100%;
+    left: 47.5%;
+    margin-top: 10px;      
+}
+
+.address{
+    width: 30%;
+}
+
+.note{
+    width: 50%;
+}
+
+.address i{
+
+    color: #20c997;
+
+}
+
+.inp1{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-bottom:50px ;
+}
+
+.inp1 input{
+    width: 48%;
+   
+}
+
+.inp2{
+    margin-bottom: 50px;
+}
+
+.inp2 textarea{
+    width: 100%;
+}
+
+input{
+    height: 50px;
+}
+
+.note button{
+    background-color: #20c997;
+    color: white;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    border-style: none;
+}
+
+
+.contact-info{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+
+.last-div{
+    padding: 50px;
+    position: relative;
+    background-color: white;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.last a{
+ padding-right: 20px;
+ transition: color 1s;
+ text-decoration: none;
+}
+
+.last a:hover{
+  color: #20c997;
+}
+
+

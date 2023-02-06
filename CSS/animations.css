@@ -1,0 +1,26 @@
+@keyframes arrow-move {
+0%{
+    top: 0;
+    opacity: .5;
+}
+    100%{
+    top: 50px;
+    opacity: 0;
+}    
+}
+
+@keyframes border-show{
+    0%{
+        border-color: rgba(ff, ff, ff, 1);
+    }
+
+    100%{
+        border-color: rgba(ff, ff, ff, 0);
+        
+    }
+    
+}
+
+
+/* head animations end */
+
